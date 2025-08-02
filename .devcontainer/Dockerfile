@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/java:21
 
-WORKDIR /java-exercise
+WORKDIR /collections
 
 RUN apt-get update -y && \
     apt-get install -y git && \
