@@ -1,0 +1,15 @@
+{
+    "name": "Collections",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack"
+            ]
+        }
+    },
+    "forwardPorts": [8080],
+    "remoteUser": "root"
+}
