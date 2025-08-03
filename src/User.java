@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class User {
     private int code;
     private String name;
@@ -21,5 +23,14 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if(obj instanceof User user) {
+            if (this == user) return true;
+            if (this.code == user.code && Objects.equals(this.name, user.name)) return true;
+        }
+        return false;
     }
 }
