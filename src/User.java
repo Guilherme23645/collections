@@ -33,4 +33,9 @@ public class User {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return String.format("{'code': %s, 'name': %s}",code,name);
+    }
 }
