@@ -8,6 +8,6 @@ public class Main {
         users.add(new User(123, "Julius"));
         System.out.println(users.contains(user));
         System.out.println(users.get(0));
-        
+        System.out.println(user.equals(new User(143,"Regina")));
     }
 }
